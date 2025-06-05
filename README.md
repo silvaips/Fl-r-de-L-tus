@@ -3,7 +3,7 @@
 Este é o site oficial do Centro de Estudos Universais Flôr de Lótus.
 
 ## 🔗 Acesse o site:
-https://SEU-USUARIO.github.io/flor-de-lotus-site/
+https://silvaips.github.io/flor-de-lotus-site/
 
 ## ✨ Sobre:
 Casa espiritualista voltada ao desenvolvimento humano, espiritualidade, amor, união e caridade.
