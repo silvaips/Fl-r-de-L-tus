@@ -1,64 +1,53 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
+/* Geral */
 body {
-    background-color: #f9f9f9;
+  margin: 0;
+  padding-top: 70px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
 }
 
+/* Navbar */
 .navbar {
-    background-color: #9932CC;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  transition: background-color 0.5s ease;
 }
 
-.navbar a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
+.navbar.scrolled {
+  background-color: #8B008B !important;
 }
 
-.banner {
-    background-color: #40E0D0;
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url('../imagens/banner.jpg') center/cover no-repeat;
+  color: white;
 }
 
-.section {
-    padding: 60px 20px;
-    max-width: 1000px;
-    margin: auto;
+.hero h1 {
+  font-size: 3rem;
+  animation: fadeIn 2s ease forwards;
 }
 
-.section h2 {
-    color: #8B008B;
-    margin-bottom: 20px;
-    text-align: center;
+.hero p {
+  font-size: 1.2rem;
+  animation: fadeIn 3s ease forwards;
 }
 
-.galeria {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+/* Animações */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px);}
+  100% { opacity: 1; transform: translateY(0);}
 }
 
-.galeria img {
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+.animate-fade {
+  animation: fadeIn 2s ease;
 }
 
-.footer {
-    background-color: #9932CC;
-    color: white;
-    padding: 20px;
-    text-align: center;
+.animate-fade-delay {
+  animation: fadeIn 3s ease;
+}
+
+/* Footer */
+footer {
+  background-color: #8B008B;
 }
